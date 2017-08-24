@@ -38,5 +38,10 @@ public class StringCalculatorTest {
 	public void addWithNewLineBetweenTheNumbers(){
 		assertEquals(calc.add("1\n2,3"), 6);
 	}
+	
+	@Test
+	public void addWithCustomDelimiters(){
+		assertEquals(calc.add("//@\n1@3@2@4"), 10);
+	}
 
 }
