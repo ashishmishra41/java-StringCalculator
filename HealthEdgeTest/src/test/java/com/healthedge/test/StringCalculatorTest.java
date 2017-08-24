@@ -23,5 +23,10 @@ public class StringCalculatorTest {
 	public void addSingleNumber(){
 		assertEquals(calc.add("1"), 1);
 	}
+	
+	@Test
+	public void addTwoNumbersWithDefaultDelimiter(){
+		assertEquals(calc.add("1,5"), 6);
+	}
 
 }
