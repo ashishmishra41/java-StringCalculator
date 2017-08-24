@@ -33,5 +33,10 @@ public class StringCalculatorTest {
 	public void addAnyAmountOfNumber(){
 		assertEquals(calc.add("3,5,3,6,2"), 3+5+3+6+2);
 	}
+	
+	@Test
+	public void addWithNewLineBetweenTheNumbers(){
+		assertEquals(calc.add("1\n2,3"), 6);
+	}
 
 }
