@@ -28,5 +28,10 @@ public class StringCalculatorTest {
 	public void addTwoNumbersWithDefaultDelimiter(){
 		assertEquals(calc.add("1,5"), 6);
 	}
+	
+	@Test
+	public void addAnyAmountOfNumber(){
+		assertEquals(calc.add("3,5,3,6,2"), 3+5+3+6+2);
+	}
 
 }
