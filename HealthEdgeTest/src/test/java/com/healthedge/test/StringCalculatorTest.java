@@ -18,5 +18,10 @@ public class StringCalculatorTest {
 	public void checkForEmptyValue() {
 		assertEquals(calc.add(""), 0);
 	}
+	
+	@Test
+	public void addSingleNumber(){
+		assertEquals(calc.add("1"), 1);
+	}
 
 }
