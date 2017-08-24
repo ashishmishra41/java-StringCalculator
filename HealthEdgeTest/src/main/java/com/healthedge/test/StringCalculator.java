@@ -12,10 +12,11 @@ public class StringCalculator {
 		return addNumbers(input.split(delimiter));
 	}
 
-	private int addNumbers(String[] numbers) {
+	private int addNumbers(String[] numbers){
 		int sumOfNumbers = 0;
-		sumOfNumbers = numbers.length == 1 ? Integer.parseInt(numbers[0])
-				: (Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]));
+		for(String number : numbers){
+			sumOfNumbers = sumOfNumbers + Integer.parseInt(number);
+		}
 		return sumOfNumbers;
 	}
 }
