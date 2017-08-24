@@ -2,7 +2,7 @@ package com.healthedge.test;
 
 public class StringCalculator {
 
-	private String delimiter = ",";
+	private String delimiter = ",|\n";
 
 	public int add(String input) {
 
